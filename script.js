@@ -1,5 +1,5 @@
 /**
- * CONDEMA – Portal Institucional de Meio Ambiente
+ * COMDEMA – Portal Institucional de Meio Ambiente
  * script.js — Versão 1.0
  *
  * Funcionalidades:
@@ -278,11 +278,11 @@ function initChatbot() {
     },
     horarios: {
       userMsg: "Horários e contatos",
-      botMsg:  "🕐 Atendimento presencial:\nSegunda a Sexta | 08h00 – 17h00\n\n📍 Rua Exemplo, 123 – Centro\n📞 (19) 3900-0000\n📱 (19) 99000-0000\n✉️ condema@municipio.sp.gov.br\n\nOutro serviço?"
+      botMsg:  "🕐 Atendimento presencial:\nSegunda a Sexta | 08h00 – 17h00\n\n📍 Rua Exemplo, 123 – Centro\n📞 (19) 3900-0000\n📱 (19) 99000-0000\n✉️ comdema@municipio.sp.gov.br\n\nOutro serviço?"
     },
     educacao: {
       userMsg: "Educação ambiental",
-      botMsg:  "📚 Nossos materiais de educação ambiental:\n\n• Guia de reciclagem doméstica\n• Manual de compostagem\n• Cartilha de preservação de nascentes\n• Programa CONDEMA nas Escolas\n\nPosso encaminhar materiais pelo seu e-mail. Gostaria?"
+      botMsg:  "📚 Nossos materiais de educação ambiental:\n\n• Guia de reciclagem doméstica\n• Manual de compostagem\n• Cartilha de preservação de nascentes\n• Programa COMDEMA nas Escolas\n\nPosso encaminhar materiais pelo seu e-mail. Gostaria?"
     },
     tutoriais: {
       userMsg: "Tutoriais e orientações",
@@ -373,8 +373,8 @@ function initAccessibility() {
   const btnContrast = document.getElementById("btn-contrast");
 
   // Restaura preferências salvas
-  const savedScale   = localStorage.getItem("condema-font-scale");
-  const savedContrast = localStorage.getItem("condema-contrast");
+  const savedScale   = localStorage.getItem("comdema-font-scale");
+  const savedContrast = localStorage.getItem("comdema-contrast");
 
   let currentScale = savedScale ? parseFloat(savedScale) : 16;
 
@@ -406,13 +406,13 @@ function initAccessibility() {
     btnContrast.addEventListener("click", () => {
       document.body.classList.toggle("high-contrast");
       const isOn = document.body.classList.contains("high-contrast");
-      localStorage.setItem("condema-contrast", isOn ? "on" : "off");
+      localStorage.setItem("comdema-contrast", isOn ? "on" : "off");
     });
   }
 
   function applyFontScale(size) {
     document.documentElement.style.setProperty("--font-scale", `${size}px`);
-    localStorage.setItem("condema-font-scale", size);
+    localStorage.setItem("comdema-font-scale", size);
   }
 }
 

@@ -1,4 +1,4 @@
-# CONDEMA – Portal Institucional de Meio Ambiente
+# COMDEMA – Portal Institucional de Meio Ambiente
 **Conselho Municipal de Defesa do Meio Ambiente**  
 Interior de São Paulo — Portal Web Institucional v1.0
 
@@ -7,7 +7,7 @@ Interior de São Paulo — Portal Web Institucional v1.0
 ## 📁 Estrutura de Arquivos
 
 ```
-condema/
+comdema/
 ├── index.html      ← Estrutura e conteúdo da página
 ├── style.css       ← Estilos, responsividade e animações
 ├── script.js       ← Interatividade e componentes JS
@@ -19,13 +19,13 @@ condema/
 ## ▶️ Como Executar
 
 ### Opção 1 — Abrir diretamente no navegador
-1. Faça download ou clone a pasta `condema/`
+1. Faça download ou clone a pasta `comdema/`
 2. Abra o arquivo `index.html` em qualquer navegador moderno (Chrome, Firefox, Edge, Safari)
 
 ### Opção 2 — Servidor local (recomendado para desenvolvimento)
 ```bash
 # Com Python 3
-cd condema
+cd comdema
 python3 -m http.server 8080
 
 # Acesse: http://localhost:8080
@@ -33,7 +33,7 @@ python3 -m http.server 8080
 
 ```bash
 # Com Node.js / npx
-npx serve condema
+npx serve comdema
 
 # Acesse: http://localhost:3000
 ```
@@ -103,7 +103,7 @@ https://wa.me/55XXXXXXXXXXX?text=...
 Substituir todas as ocorrências de `município` e `Município – SP` pelo nome real.
 
 ### E-mail institucional
-Substituir `condema@municipio.sp.gov.br` pelo e-mail real.
+Substituir `comdema@municipio.sp.gov.br` pelo e-mail real.
 
 ### Dados dos conselheiros
 Os números na seção de stats (12 conselheiros, 340 denúncias, 28 campanhas) podem ser atualizados nos atributos `data-target` no `index.html`:
@@ -137,6 +137,6 @@ A estrutura está pronta para integração futura com:
 
 ## 🌿 Desenvolvido para
 
-> Portal institucional do **CONDEMA** — Conselho Municipal de Defesa do Meio Ambiente  
+> Portal institucional do **COMDEMA** — Conselho Municipal de Defesa do Meio Ambiente  
 > Prefeitura Municipal — Interior de São Paulo  
 > Versão 1.0 — 2025

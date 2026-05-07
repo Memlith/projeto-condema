@@ -1,5 +1,5 @@
 /* =====================================================
-   CONDEMA – Portal Institucional de Meio Ambiente
+   COMDEMA – Portal Institucional de Meio Ambiente
    style.css — Versão 1.0
    Desenvolvido com Mobile First + Acessibilidade
    ===================================================== */
@@ -228,9 +228,10 @@ body.high-contrast .noticia-card { background: #111; border: 1px solid #333; }
 }
 
 .logo-icon {
-  width: 44px;
+  padding: 4px;
+  width: 60px;
   height: 44px;
-  background: linear-gradient(135deg, var(--green-500), var(--forest));
+
   border-radius: var(--radius-md);
   display: grid;
   place-items: center;
@@ -239,7 +240,7 @@ body.high-contrast .noticia-card { background: #111; border: 1px solid #333; }
   box-shadow: var(--shadow-green);
 }
 .logo-icon svg { width: 22px; height: 22px; }
-.logo-icon--sm { width: 36px; height: 36px; }
+.logo-icon--sm { width: 48px; height: 36px; border-radius: 6px; background-color: #fff; }
 .logo-icon--sm svg { width: 18px; height: 18px; }
 
 .logo-text__primary {
@@ -930,8 +931,8 @@ body.high-contrast .noticia-card { background: #111; border: 1px solid #333; }
   color: #fff;
   border: none;
 }
-.campanha-card--destaque h3,
-.campanha-card--destaque p { color: rgba(255,255,255,.9); }
+.campanha-card--destaque h3 { color: rgba(255,255,255,.9)!important; }
+.campanha-card--destaque p { color: rgba(255,255,255,.75)!important; }
 
 .campanha-card__badge {
   display: inline-block;
@@ -1055,9 +1056,9 @@ body.high-contrast .noticia-card { background: #111; border: 1px solid #333; }
   border: none;
   color: #fff;
 }
-.noticia-card--featured h3 { color: #fff; }
-.noticia-card--featured p  { color: rgba(255,255,255,.75); }
-.noticia-card--featured time { color: rgba(255,255,255,.5); }
+.noticia-card--featured h3 { color: #fff !important; }
+.noticia-card--featured p  { color: rgba(255,255,255,.75)!important;}
+.noticia-card--featured time { color: rgba(255,255,255,.5) !important;}
 
 .noticia-card__meta {
   display: flex;
@@ -1578,4 +1579,6 @@ time {
     animation-duration: .01ms !important;
     transition-duration: .01ms !important;
   }
-}
+} 
+
+

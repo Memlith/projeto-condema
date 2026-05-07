@@ -1,709 +1,823 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="COMDEMA – Conselho Municipal de Defesa do Meio Ambiente. Preservação, educação ambiental, denúncias e transparência para o município." />
-  <meta name="keywords" content="COMDEMA, meio ambiente, reciclagem, denúncia ambiental, conselho municipal, sustentabilidade" />
-  <meta name="author" content="COMDEMA Municipal" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="COMDEMA – Conselho Municipal de Defesa do Meio Ambiente. Preservação, educação ambiental, denúncias e transparência para o município."
+    />
+    <meta
+      name="keywords"
+      content="COMDEMA, meio ambiente, reciclagem, denúncia ambiental, conselho municipal, sustentabilidade"
+    />
+    <meta name="author" content="COMDEMA Municipal" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="COMDEMA – Conselho Municipal de Defesa do Meio Ambiente" />
-  <meta property="og:description" content="Portal institucional do COMDEMA. Educação ambiental, campanhas, denúncias e transparência." />
-  <meta property="og:type" content="website" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="COMDEMA – Conselho Municipal de Defesa do Meio Ambiente" />
+    <meta
+      property="og:description"
+      content="Portal institucional do COMDEMA. Educação ambiental, campanhas, denúncias e transparência."
+    />
+    <meta property="og:type" content="website" />
 
-  <title>COMDEMA – Conselho Municipal de Defesa do Meio Ambiente</title>
+    <title>COMDEMA – Conselho Municipal de Defesa do Meio Ambiente</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Lucide Icons via CDN -->
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <!-- Lucide Icons via CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ========== SKIP LINK (ACESSIBILIDADE) ========== -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
-  <!-- ========== SKIP LINK (ACESSIBILIDADE) ========== -->
-  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
-
-  <!-- ========== BARRA SUPERIOR DE ACESSIBILIDADE ========== -->
-  <div class="top-bar" role="navigation" aria-label="Barra de acessibilidade">
-    <div class="container top-bar__inner">
-      <span class="top-bar__info">
-        <i data-lucide="map-pin" aria-hidden="true"></i>
-        Prefeitura Municipal — Indaiatuba-SP
-      </span>
-      <div class="top-bar__actions">
-        <button class="a11y-btn" id="btn-font-increase" aria-label="Aumentar fonte" title="Aumentar fonte">A+</button>
-        <button class="a11y-btn" id="btn-font-decrease" aria-label="Diminuir fonte" title="Diminuir fonte">A-</button>
-        <button class="a11y-btn" id="btn-contrast" aria-label="Alto contraste" title="Alto contraste">
-          <i data-lucide="contrast" aria-hidden="true"></i>
-        </button>
+    <!-- ========== BARRA SUPERIOR DE ACESSIBILIDADE ========== -->
+    <div class="top-bar" role="navigation" aria-label="Barra de acessibilidade">
+      <div class="container top-bar__inner">
+        <span class="top-bar__info">
+          <i data-lucide="map-pin" aria-hidden="true"></i>
+          Prefeitura Municipal — Indaiatuba-SP
+        </span>
+        <div class="top-bar__actions">
+          <button class="a11y-btn" id="btn-font-increase" aria-label="Aumentar fonte" title="Aumentar fonte">A+</button>
+          <button class="a11y-btn" id="btn-font-decrease" aria-label="Diminuir fonte" title="Diminuir fonte">A-</button>
+          <button class="a11y-btn" id="btn-contrast" aria-label="Alto contraste" title="Alto contraste">
+            <i data-lucide="contrast" aria-hidden="true"></i>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- ========== HEADER ========== -->
-  <header class="header" role="banner">
-    <div class="container header__inner">
-      <!-- Logo -->
-      <a href="#" class="header__logo" aria-label="COMDEMA – página inicial">
-        <div class="logo-icon" aria-hidden="true">
-          <img src="../img/mini_0670-comdema.jpg" alt="">
-        </div>
-        <div class="logo-text">
-          <span class="logo-text__primary">COMDEMA</span>
-          <span class="logo-text__secondary">Conselho Municipal de Defesa do Meio Ambiente</span>
-        </div>
-      </a>
-
-      <!-- Navegação Desktop -->
-      <nav class="header__nav" id="main-nav" aria-label="Navegação principal">
-        <ul class="nav-list" role="list">
-          <li><a href="#sobre" class="nav-link">Sobre</a></li>
-          <li><a href="#educacao" class="nav-link">Educação</a></li>
-          <li><a href="#campanhas" class="nav-link">Campanhas</a></li>
-          <li><a href="#noticias" class="nav-link">Notícias</a></li>
-          <li><a href="#denuncia" class="nav-link">Denúncias</a></li>
-          <li><a href="#contato" class="nav-link nav-link--cta">Contato</a></li>
-        </ul>
-      </nav>
-
-      <!-- Menu Hamburguer Mobile -->
-      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
-        <span class="hamburger__bar"></span>
-        <span class="hamburger__bar"></span>
-        <span class="hamburger__bar"></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- ========== MAIN ========== -->
-  <main id="main-content">
-
-    <!-- ========== HERO ========== -->
-    <section class="hero" aria-label="Banner principal">
-      <div class="hero__bg" aria-hidden="true">
-        <div class="hero__blob hero__blob--1"></div>
-        <div class="hero__blob hero__blob--2"></div>
-        <div class="hero__particles" id="particles"></div>
-      </div>
-      <div class="container hero__content">
-        <div class="hero__badge animate-fade-up" aria-hidden="true">
-          <i data-lucide="shield-check"></i>
-          Órgão Municipal Oficial
-        </div>
-        <h1 class="hero__title animate-fade-up" style="animation-delay:.1s">
-          Cuidar do meio ambiente<br />
-          <em>é cuidar de todos nós</em>
-        </h1>
-        <p class="hero__subtitle animate-fade-up" style="animation-delay:.2s">
-          O COMDEMA trabalha pela preservação, fiscalização e educação ambiental do nosso município. Juntos somos mais fortes.
-        </p>
-        <div class="hero__actions animate-fade-up" style="animation-delay:.3s">
-          <a href="#sobre" class="btn btn--primary">
-            <i data-lucide="info" aria-hidden="true"></i>
-            Conheça o COMDEMA
-          </a>
-          <a href="#denuncia" class="btn btn--outline">
-            <i data-lucide="alert-triangle" aria-hidden="true"></i>
-            Fazer Denúncia
-          </a>
-        </div>
-
-        <!-- Stats -->
-        <div class="hero__stats animate-fade-up" style="animation-delay:.4s" aria-label="Números do COMDEMA">
-          <div class="stat-item">
-            <span class="stat-item__number" data-target="12">0</span>
-            <span class="stat-item__label">Conselheiros ativos</span>
+    <!-- ========== HEADER ========== -->
+    <header class="header" role="banner">
+      <div class="container header__inner">
+        <!-- Logo -->
+        <a href="#" class="header__logo" aria-label="COMDEMA – página inicial">
+          <div class="logo-icon" aria-hidden="true">
+            <img src="../img/mini_0670-comdema.jpg" alt="" />
           </div>
-          <div class="stat-divider" aria-hidden="true"></div>
-          <div class="stat-item">
-            <span class="stat-item__number" data-target="340">0</span>
-            <span class="stat-item__label">Denúncias atendidas</span>
-          </div>
-          <div class="stat-divider" aria-hidden="true"></div>
-          <div class="stat-item">
-            <span class="stat-item__number" data-target="28">0</span>
-            <span class="stat-item__label">Campanhas realizadas</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Scroll indicator -->
-      <div class="hero__scroll" aria-hidden="true">
-        <span></span>
-      </div>
-    </section>
-
-    <!-- ========== SOBRE O COMDEMA ========== -->
-    <section class="sobre section" id="sobre" aria-labelledby="sobre-title">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Quem somos</span>
-          <h2 class="section-title" id="sobre-title">O que é o COMDEMA?</h2>
-          <p class="section-desc">Órgão consultivo e deliberativo criado para fiscalizar, orientar e promover a política ambiental municipal.</p>
-        </div>
-
-        <div class="sobre__grid">
-          <!-- Texto principal -->
-          <div class="sobre__text animate-slide-left">
-            <p>O <strong>COMDEMA</strong> (Conselho Municipal de Defesa do Meio Ambiente) é um órgão colegiado, de caráter consultivo e deliberativo, vinculado ao poder executivo municipal. Foi criado com a missão de garantir a participação popular nas decisões relacionadas à política ambiental do município.</p>
-            <p>O conselho é composto por representantes do poder público e da sociedade civil organizada, garantindo transparência e democracia nas decisões que afetam o meio ambiente local.</p>
-            <a href="#contato" class="btn btn--primary" style="margin-top:1.5rem">
-              <i data-lucide="users" aria-hidden="true"></i>
-              Fale com um conselheiro
-            </a>
-          </div>
-
-          <!-- Cards de funções -->
-          <div class="sobre__cards">
-            <article class="func-card animate-fade-up" style="animation-delay:.1s">
-              <div class="func-card__icon" aria-hidden="true"><i data-lucide="gavel"></i></div>
-              <h3>Deliberar</h3>
-              <p>Aprova normas, pareceres e políticas ambientais municipais.</p>
-            </article>
-            <article class="func-card animate-fade-up" style="animation-delay:.2s">
-              <div class="func-card__icon" aria-hidden="true"><i data-lucide="eye"></i></div>
-              <h3>Fiscalizar</h3>
-              <p>Monitora o cumprimento da legislação ambiental no município.</p>
-            </article>
-            <article class="func-card animate-fade-up" style="animation-delay:.3s">
-              <div class="func-card__icon" aria-hidden="true"><i data-lucide="graduation-cap"></i></div>
-              <h3>Educar</h3>
-              <p>Promove ações de conscientização e educação ambiental.</p>
-            </article>
-            <article class="func-card animate-fade-up" style="animation-delay:.4s">
-              <div class="func-card__icon" aria-hidden="true"><i data-lucide="users-2"></i></div>
-              <h3>Participar</h3>
-              <p>Garante a participação popular nas decisões ambientais.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== EDUCAÇÃO AMBIENTAL ========== -->
-    <section class="educacao section section--alt" id="educacao" aria-labelledby="educacao-title">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Educação</span>
-          <h2 class="section-title" id="educacao-title">Educação Ambiental</h2>
-          <p class="section-desc">Informação é o primeiro passo para um ambiente mais saudável. Conheça práticas sustentáveis.</p>
-        </div>
-
-        <div class="edu__tabs" role="tablist" aria-label="Categorias de educação ambiental">
-          <button class="edu-tab active" role="tab" aria-selected="true" data-tab="residuos" aria-controls="tab-residuos">
-            <i data-lucide="trash-2" aria-hidden="true"></i> Resíduos
-          </button>
-          <button class="edu-tab" role="tab" aria-selected="false" data-tab="reciclagem" aria-controls="tab-reciclagem">
-            <i data-lucide="recycle" aria-hidden="true"></i> Reciclagem
-          </button>
-          <button class="edu-tab" role="tab" aria-selected="false" data-tab="preservacao" aria-controls="tab-preservacao">
-            <i data-lucide="trees" aria-hidden="true"></i> Preservação
-          </button>
-          <button class="edu-tab" role="tab" aria-selected="false" data-tab="urbano" aria-controls="tab-urbano">
-            <i data-lucide="building-2" aria-hidden="true"></i> Conscientização Urbana
-          </button>
-        </div>
-
-        <!-- Tab: Resíduos -->
-        <div class="edu-panel active" id="tab-residuos" role="tabpanel">
-          <div class="edu-panel__grid">
-            <div class="edu-panel__info">
-              <h3>Descarte Correto de Resíduos</h3>
-              <p>O descarte inadequado de resíduos sólidos é uma das principais causas de poluição ambiental. Separar o lixo corretamente protege solos, rios e a saúde pública.</p>
-              <ul class="edu-list">
-                <li><i data-lucide="check-circle" aria-hidden="true"></i> Separe recicláveis de orgânicos</li>
-                <li><i data-lucide="check-circle" aria-hidden="true"></i> Nunca jogue lixo em terrenos baldios ou rios</li>
-                <li><i data-lucide="check-circle" aria-hidden="true"></i> Descarte pilhas e eletrônicos em pontos específicos</li>
-                <li><i data-lucide="check-circle" aria-hidden="true"></i> Leve entulho a ecopontos municipais</li>
-                <li><i data-lucide="check-circle" aria-hidden="true"></i> Reduza o uso de embalagens descartáveis</li>
-              </ul>
-            </div>
-            <div class="edu-panel__visual">
-              <div class="lixeira-guide" aria-label="Guia de cores das lixeiras">
-                <div class="lixeira" style="--lixeira-color:#2563eb">
-                  <i data-lucide="droplets" aria-hidden="true"></i>
-                  <span>Azul</span>
-                  <small>Papel e papelão</small>
-                </div>
-                <div class="lixeira" style="--lixeira-color:#dc2626">
-                  <i data-lucide="package" aria-hidden="true"></i>
-                  <span>Vermelho</span>
-                  <small>Plástico</small>
-                </div>
-                <div class="lixeira" style="--lixeira-color:#16a34a">
-                  <i data-lucide="wine" aria-hidden="true"></i>
-                  <span>Verde</span>
-                  <small>Vidro</small>
-                </div>
-                <div class="lixeira" style="--lixeira-color:#ca8a04">
-                  <i data-lucide="cpu" aria-hidden="true"></i>
-                  <span>Amarelo</span>
-                  <small>Metal</small>
-                </div>
-                <div class="lixeira" style="--lixeira-color:#78716c">
-                  <i data-lucide="leaf" aria-hidden="true"></i>
-                  <span>Marrom</span>
-                  <small>Orgânicos</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tab: Reciclagem -->
-        <div class="edu-panel" id="tab-reciclagem" role="tabpanel" hidden>
-          <div class="edu-panel__grid">
-            <div class="edu-panel__info">
-              <h3>Reciclagem: Feche o Ciclo</h3>
-              <p>A reciclagem transforma resíduos em novos produtos, economizando energia e recursos naturais. Uma atitude simples com impacto enorme no planeta.</p>
-              <ul class="edu-list">
-                <li><i data-lucide="check-circle" aria-hidden="true"></i> Limpe as embalagens antes de reciclar</li>
-                <li><i data-lucide="check-circle" aria-hidden="true"></i> Amasse latas e garrafas PET para economizar espaço</li>
-                <li><i data-lucide="check-circle" aria-hidden="true"></i> Use sacolas retornáveis nas compras</li>
-                <li><i data-lucide="check-circle" aria-hidden="true"></i> Procure cooperativas de reciclagem locais</li>
-                <li><i data-lucide="check-circle" aria-hidden="true"></i> Doe roupas e eletrônicos em vez de jogar fora</li>
-              </ul>
-            </div>
-            <div class="edu-panel__visual">
-              <div class="recycle-facts">
-                <div class="recycle-fact">
-                  <span class="recycle-fact__num">1 tonelada</span>
-                  <span>de papel reciclado salva 15 árvores</span>
-                </div>
-                <div class="recycle-fact">
-                  <span class="recycle-fact__num">95%</span>
-                  <span>menos energia para produzir alumínio reciclado</span>
-                </div>
-                <div class="recycle-fact">
-                  <span class="recycle-fact__num">450 anos</span>
-                  <span>é o tempo que o plástico leva para se decompor</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tab: Preservação -->
-        <div class="edu-panel" id="tab-preservacao" role="tabpanel" hidden>
-          <div class="edu-panel__grid">
-            <div class="edu-panel__info">
-              <h3>Preservação Ambiental</h3>
-              <p>Preservar áreas verdes, nascentes e matas ciliares é fundamental para garantir água, ar limpo e qualidade de vida às gerações futuras.</p>
-              <ul class="edu-list">
-                <li><i data-lucide="check-circle" aria-hidden="true"></i> Não desmatar áreas de proteção permanente</li>
-                <li><i data-lucide="check-circle" aria-hidden="true"></i> Proteja nascentes e córregos do seu bairro</li>
-                <li><i data-lucide="check-circle" aria-hidden="true"></i> Plante árvores nativas em sua propriedade</li>
-                <li><i data-lucide="check-circle" aria-hidden="true"></i> Denuncie queimadas e desmatamentos ilegais</li>
-                <li><i data-lucide="check-circle" aria-hidden="true"></i> Participe de mutirões de reflorestamento</li>
-              </ul>
-            </div>
-            <div class="edu-panel__visual">
-              <div class="preservation-visual" aria-hidden="true">
-                <div class="preserve-circle preserve-circle--1"><i data-lucide="droplets"></i><span>Água</span></div>
-                <div class="preserve-circle preserve-circle--2"><i data-lucide="wind"></i><span>Ar</span></div>
-                <div class="preserve-circle preserve-circle--3"><i data-lucide="trees"></i><span>Solo</span></div>
-                <div class="preserve-circle preserve-circle--4"><i data-lucide="bird"></i><span>Fauna</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tab: Conscientização Urbana -->
-        <div class="edu-panel" id="tab-urbano" role="tabpanel" hidden>
-          <div class="edu-panel__grid">
-            <div class="edu-panel__info">
-              <h3>Conscientização Urbana</h3>
-              <p>A cidade também é natureza. Pequenos hábitos urbanos sustentáveis fazem grande diferença no meio ambiente e na qualidade de vida coletiva.</p>
-              <ul class="edu-list">
-                <li><i data-lucide="check-circle" aria-hidden="true"></i> Prefira transporte coletivo ou bicicleta</li>
-                <li><i data-lucide="check-circle" aria-hidden="true"></i> Economize água ao lavar calçadas</li>
-                <li><i data-lucide="check-circle" aria-hidden="true"></i> Não jogue lixo em bueiros ou sarjetas</li>
-                <li><i data-lucide="check-circle" aria-hidden="true"></i> Use lâmpadas LED e reduza o consumo elétrico</li>
-                <li><i data-lucide="check-circle" aria-hidden="true"></i> Cuide das árvores da sua calçada</li>
-              </ul>
-            </div>
-            <div class="edu-panel__visual">
-              <div class="urban-tips" aria-hidden="true">
-                <div class="urban-tip"><i data-lucide="bike"></i><span>Mobilidade sustentável</span></div>
-                <div class="urban-tip"><i data-lucide="zap"></i><span>Economia de energia</span></div>
-                <div class="urban-tip"><i data-lucide="droplets"></i><span>Uso consciente da água</span></div>
-                <div class="urban-tip"><i data-lucide="leaf"></i><span>Arborização urbana</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== CAMPANHAS ========== -->
-    <section class="campanhas section" id="campanhas" aria-labelledby="campanhas-title">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Divulgação</span>
-          <h2 class="section-title" id="campanhas-title">Campanhas Ambientais</h2>
-          <p class="section-desc">Iniciativas do COMDEMA para engajar e mobilizar a população em prol do meio ambiente.</p>
-        </div>
-
-        <div class="campanhas__grid">
-          <article class="campanha-card campanha-card--destaque animate-fade-up">
-            <div class="campanha-card__badge">Em andamento</div>
-            <div class="campanha-card__icon" aria-hidden="true"><i data-lucide="droplets"></i></div>
-            <h3>Março Azul – Água é Vida</h3>
-            <p>Campanha de conscientização sobre o uso racional da água. Participe e ajude a proteger esse recurso essencial.</p>
-            <a href="#contato" class="btn btn--sm btn--primary">Saiba mais</a>
-          </article>
-
-          <article class="campanha-card animate-fade-up" style="animation-delay:.1s">
-            <div class="campanha-card__badge campanha-card__badge--green">Recorrente</div>
-            <div class="campanha-card__icon" aria-hidden="true"><i data-lucide="recycle"></i></div>
-            <h3>Cidade Limpa</h3>
-            <p>Mutirões mensais de limpeza em praças, parques e margens de córregos. Venha participar!</p>
-            <a href="#contato" class="btn btn--sm btn--outline">Participar</a>
-          </article>
-
-          <article class="campanha-card animate-fade-up" style="animation-delay:.2s">
-            <div class="campanha-card__badge campanha-card__badge--amber">Próxima</div>
-            <div class="campanha-card__icon" aria-hidden="true"><i data-lucide="tree-pine"></i></div>
-            <h3>Plantar é Cuidar</h3>
-            <p>Distribuição gratuita de mudas nativas e oficinas de jardinagem sustentável para moradores.</p>
-            <a href="#contato" class="btn btn--sm btn--outline">Inscrever-se</a>
-          </article>
-
-          <article class="campanha-card animate-fade-up" style="animation-delay:.3s">
-            <div class="campanha-card__badge campanha-card__badge--blue">Educacional</div>
-            <div class="campanha-card__icon" aria-hidden="true"><i data-lucide="school"></i></div>
-            <h3>COMDEMA nas Escolas</h3>
-            <p>Programa de visitas educativas às escolas municipais com oficinas de reciclagem e preservação ambiental.</p>
-            <a href="#contato" class="btn btn--sm btn--outline">Agendar</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== DICAS AMBIENTAIS ========== -->
-    <section class="dicas section section--alt" aria-labelledby="dicas-title">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Dicas</span>
-          <h2 class="section-title" id="dicas-title">Dicas para o Dia a Dia</h2>
-        </div>
-        <div class="dicas__grid" role="list">
-          <div class="dica-card" role="listitem">
-            <div class="dica-card__icon" aria-hidden="true"><i data-lucide="shower-head"></i></div>
-            <p>Reduza o banho para <strong>5 minutos</strong> e economize até 80 litros de água.</p>
-          </div>
-          <div class="dica-card" role="listitem">
-            <div class="dica-card__icon" aria-hidden="true"><i data-lucide="shopping-bag"></i></div>
-            <p>Leve sua <strong>sacola retornável</strong> sempre que sair para compras.</p>
-          </div>
-          <div class="dica-card" role="listitem">
-            <div class="dica-card__icon" aria-hidden="true"><i data-lucide="plug-zap"></i></div>
-            <p>Desligue aparelhos da <strong>tomada</strong> quando não estiver usando.</p>
-          </div>
-          <div class="dica-card" role="listitem">
-            <div class="dica-card__icon" aria-hidden="true"><i data-lucide="car"></i></div>
-            <p>Prefira <strong>caronas solidárias</strong> e transporte público sempre que possível.</p>
-          </div>
-          <div class="dica-card" role="listitem">
-            <div class="dica-card__icon" aria-hidden="true"><i data-lucide="flame"></i></div>
-            <p>Nunca faça <strong>queimadas</strong>. Denuncie ao COMDEMA imediatamente.</p>
-          </div>
-          <div class="dica-card" role="listitem">
-            <div class="dica-card__icon" aria-hidden="true"><i data-lucide="flower-2"></i></div>
-            <p>Monte uma <strong>composteira</strong> doméstica com restos de frutas e legumes.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== NOTÍCIAS ========== -->
-    <section class="noticias section" id="noticias" aria-labelledby="noticias-title">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Comunicados</span>
-          <h2 class="section-title" id="noticias-title">Notícias e Comunicados</h2>
-          <p class="section-desc">Fique por dentro das últimas ações e decisões do COMDEMA.</p>
-        </div>
-
-        <div class="noticias__grid">
-          <article class="noticia-card noticia-card--featured animate-fade-up card-ativo" >
-            <div class="noticia-card__meta">
-              <span class="noticia-tag">Reunião Plenária</span>
-              <time datetime="2025-05-15">15 de maio de 2025</time>
-            </div>
-            <h3>Reunião ordinária de maio – Pauta sobre licenciamento ambiental</h3>
-            <p>O COMDEMA realizará reunião ordinária para deliberar sobre novos pedidos de licenciamento ambiental no município. Participação pública é bem-vinda.</p>
-            <a href="#" class="noticia-card__link">
-              Ler mais <i data-lucide="arrow-right" aria-hidden="true"></i>
-            </a>
-          </article>
-
-          <article class="noticia-card animate-fade-up" style="animation-delay:.1s">
-            <div class="noticia-card__meta">
-              <span class="noticia-tag noticia-tag--green">Campanha</span>
-              <time datetime="2025-05-08">08 de maio de 2025</time>
-            </div>
-            <h3>Mutirão de limpeza do Parque Municipal mobiliza 200 voluntários</h3>
-            <p>Ação coletiva retirou mais de 3 toneladas de resíduos do parque municipal.</p>
-            <a href="#" class="noticia-card__link">
-              Ler mais <i data-lucide="arrow-right" aria-hidden="true"></i>
-            </a>
-          </article>
-
-          <article class="noticia-card animate-fade-up" style="animation-delay:.2s">
-            <div class="noticia-card__meta">
-              <span class="noticia-tag noticia-tag--blue">Educação</span>
-              <time datetime="2025-04-28">28 de abril de 2025</time>
-            </div>
-            <h3>COMDEMA leva educação ambiental a 12 escolas municipais</h3>
-            <p>Mais de 1.500 alunos participaram de oficinas sobre reciclagem e preservação das nascentes.</p>
-            <a href="#" class="noticia-card__link">
-              Ler mais <i data-lucide="arrow-right" aria-hidden="true"></i>
-            </a>
-          </article>
-
-          <article class="noticia-card animate-fade-up" style="animation-delay:.3s">
-            <div class="noticia-card__meta">
-              <span class="noticia-tag noticia-tag--amber">Resolução</span>
-              <time datetime="2025-04-10">10 de abril de 2025</time>
-            </div>
-            <h3>Aprovada resolução sobre descarte de resíduos de construção civil</h3>
-            <p>Nova norma estabelece procedimentos obrigatórios para geradores de entulho no município.</p>
-            <a href="#" class="noticia-card__link">
-              Ler mais <i data-lucide="arrow-right" aria-hidden="true"></i>
-            </a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== DENÚNCIAS ========== -->
-    <section class="denuncia section" id="denuncia" aria-labelledby="denuncia-title">
-      <div class="container">
-        <div class="denuncia__inner">
-          <div class="denuncia__content animate-slide-left">
-            <span class="section-tag section-tag--white">Canal Oficial</span>
-            <h2 class="section-title section-title--white" id="denuncia-title">Como Fazer uma Denúncia Ambiental</h2>
-            <p style="color:rgba(255,255,255,.85);margin-bottom:2rem">Você identificou um crime ou irregularidade ambiental? Conte para nós. Sua denúncia é fundamental para proteger o meio ambiente do nosso município.</p>
-
-            <div class="denuncia__steps">
-              <div class="denuncia-step">
-                <div class="denuncia-step__num" aria-hidden="true">1</div>
-                <div>
-                  <h4>Documente</h4>
-                  <p>Tire fotos ou vídeos da irregularidade, se possível e seguro.</p>
-                </div>
-              </div>
-              <div class="denuncia-step">
-                <div class="denuncia-step__num" aria-hidden="true">2</div>
-                <div>
-                  <h4>Registre o endereço</h4>
-                  <p>Anote o endereço ou ponto de referência do local.</p>
-                </div>
-              </div>
-              <div class="denuncia-step">
-                <div class="denuncia-step__num" aria-hidden="true">3</div>
-                <div>
-                  <h4>Entre em contato</h4>
-                  <p>Use nosso WhatsApp, e-mail ou compareça presencialmente.</p>
-                </div>
-              </div>
-              <div class="denuncia-step">
-                <div class="denuncia-step__num" aria-hidden="true">4</div>
-                <div>
-                  <h4>Acompanhe</h4>
-                  <p>Solicite um número de protocolo para acompanhar o andamento.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="denuncia__actions">
-              <a href="https://wa.me/5519900000000?text=Ol%C3%A1%2C+gostaria+de+registrar+uma+den%C3%BAncia+ambiental." class="btn btn--white" target="_blank" rel="noopener noreferrer">
-                <i data-lucide="message-circle" aria-hidden="true"></i>
-                Denunciar pelo WhatsApp
-              </a>
-              <a href="mailto:comdema@municipio.sp.gov.br" class="btn btn--outline-white">
-                <i data-lucide="mail" aria-hidden="true"></i>
-                Denunciar por e-mail
-              </a>
-            </div>
-          </div>
-
-          <!-- Chatbot simulado -->
-          <div class="chatbot animate-slide-right" aria-label="Simulação do chatbot do COMDEMA">
-            <div class="chatbot__header">
-              <div class="chatbot__avatar" aria-hidden="true">
-                <i data-lucide="leaf"></i>
-              </div>
-              <div>
-                <strong>COMDEMA Bot</strong>
-                <span class="chatbot__status">
-                  <span class="status-dot" aria-hidden="true"></span>
-                  Online agora
-                </span>
-              </div>
-            </div>
-
-            <div class="chatbot__messages" id="chatMessages" role="log" aria-live="polite" aria-label="Mensagens do chatbot">
-              <div class="chat-msg chat-msg--bot">
-                <p>👋 Olá! Sou o assistente virtual do <strong>COMDEMA</strong>. Como posso ajudar você hoje?</p>
-              </div>
-              <div class="chat-msg chat-msg--bot">
-                <p>Escolha uma das opções abaixo:</p>
-              </div>
-            </div>
-
-            <div class="chatbot__options" role="menu">
-              <button class="chat-opt" role="menuitem" data-response="denuncia">
-                <i data-lucide="alert-triangle" aria-hidden="true"></i> Fazer uma denúncia ambiental
-              </button>
-              <button class="chat-opt" role="menuitem" data-response="descarte">
-                <i data-lucide="trash-2" aria-hidden="true"></i> Informações sobre descarte correto
-              </button>
-              <button class="chat-opt" role="menuitem" data-response="horarios">
-                <i data-lucide="clock" aria-hidden="true"></i> Horários e contatos
-              </button>
-              <button class="chat-opt" role="menuitem" data-response="educacao">
-                <i data-lucide="book-open" aria-hidden="true"></i> Educação ambiental
-              </button>
-              <button class="chat-opt" role="menuitem" data-response="tutoriais">
-                <i data-lucide="play-circle" aria-hidden="true"></i> Tutoriais e orientações
-              </button>
-            </div>
-
-            <div class="chatbot__input">
-              <input type="text" id="chatInput" placeholder="Digite sua mensagem..." aria-label="Digite sua mensagem para o chatbot" />
-              <button id="chatSend" aria-label="Enviar mensagem">
-                <i data-lucide="send" aria-hidden="true"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== CONTATO ========== -->
-    <section class="contato section" id="contato" aria-labelledby="contato-title">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Fale Conosco</span>
-          <h2 class="section-title" id="contato-title">Entre em Contato</h2>
-          <p class="section-desc">Estamos aqui para ouvir, orientar e agir. Seus direitos ambientais são nossa prioridade.</p>
-        </div>
-        <div class="contato__grid">
-          <div class="contato-card animate-fade-up">
-            <div class="contato-card__icon" aria-hidden="true"><i data-lucide="map-pin"></i></div>
-            <h3>Endereço</h3>
-            <p>Rua Exemplo, 123 – Centro<br />Município – SP, CEP 00000-000</p>
-          </div>
-          <div class="contato-card animate-fade-up" style="animation-delay:.1s">
-            <div class="contato-card__icon" aria-hidden="true"><i data-lucide="clock"></i></div>
-            <h3>Horário de Atendimento</h3>
-            <p>Segunda a Sexta<br />08h00 às 17h00</p>
-          </div>
-          <div class="contato-card animate-fade-up" style="animation-delay:.2s">
-            <div class="contato-card__icon" aria-hidden="true"><i data-lucide="phone"></i></div>
-            <h3>Telefone</h3>
-            <p>(19) 3900-0000<br />(19) 99000-0000</p>
-          </div>
-          <div class="contato-card animate-fade-up" style="animation-delay:.3s">
-            <div class="contato-card__icon" aria-hidden="true"><i data-lucide="mail"></i></div>
-            <h3>E-mail</h3>
-            <p>comdema@municipio.sp.gov.br</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ========== FOOTER ========== -->
-  <footer class="footer" role="contentinfo">
-    <div class="container footer__inner">
-      <div class="footer__brand">
-        <a href="#" class="footer__logo" aria-label="COMDEMA – início">
-          <div class="logo-icon logo-icon--sm" aria-hidden="true"><img src="../img/mini_0670-comdema.jpg" alt=""></div>
-          <div>
+          <div class="logo-text">
             <span class="logo-text__primary">COMDEMA</span>
-            <span class="logo-text__secondary">Conselho Municipal de Defesa<br />do Meio Ambiente</span>
+            <span class="logo-text__secondary">Conselho Municipal de Defesa do Meio Ambiente</span>
           </div>
         </a>
-        <p class="footer__tagline">Preservando o presente para garantir o futuro.</p>
+
+        <!-- Navegação Desktop -->
+        <nav class="header__nav" id="main-nav" aria-label="Navegação principal">
+          <ul class="nav-list" role="list">
+            <li><a href="#sobre" class="nav-link">Sobre</a></li>
+            <li><a href="#educacao" class="nav-link">Educação</a></li>
+            <li><a href="#campanhas" class="nav-link">Campanhas</a></li>
+            <li><a href="#noticias" class="nav-link">Notícias</a></li>
+            <li><a href="#denuncia" class="nav-link">Denúncias</a></li>
+            <li><a href="#contato" class="nav-link nav-link--cta">Contato</a></li>
+          </ul>
+        </nav>
+
+        <!-- Menu Hamburguer Mobile -->
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+        </button>
       </div>
+    </header>
 
-      <nav class="footer__nav" aria-label="Links úteis">
-        <h4>Links Úteis</h4>
-        <ul role="list">
-          <li><a href="#">Prefeitura Municipal</a></li>
-          <li><a href="#">CETESB – Agência Ambiental SP</a></li>
-          <li><a href="#">IBAMA</a></li>
-          <li><a href="#">Secretaria de Meio Ambiente SP</a></li>
-          <li><a href="#">SISNAMA</a></li>
-        </ul>
-      </nav>
+    <!-- ========== MAIN ========== -->
+    <main id="main-content">
+      <!-- ========== HERO ========== -->
+      <section class="hero" aria-label="Banner principal">
+        <div class="hero__bg" aria-hidden="true">
+          <div class="hero__blob hero__blob--1"></div>
+          <div class="hero__blob hero__blob--2"></div>
+          <div class="hero__particles" id="particles"></div>
+        </div>
+        <div class="container hero__content">
+          <div class="hero__badge animate-fade-up" aria-hidden="true">
+            <i data-lucide="shield-check"></i>
+            Órgão Municipal Oficial
+          </div>
+          <h1 class="hero__title animate-fade-up" style="animation-delay: 0.1s">
+            Cuidar do meio ambiente<br />
+            <em>é cuidar de todos nós</em>
+          </h1>
+          <p class="hero__subtitle animate-fade-up" style="animation-delay: 0.2s">
+            O COMDEMA trabalha pela preservação, fiscalização e educação ambiental do nosso município. Juntos somos mais
+            fortes.
+          </p>
+          <div class="hero__actions animate-fade-up" style="animation-delay: 0.3s">
+            <a href="#sobre" class="btn btn--primary">
+              <i data-lucide="info" aria-hidden="true"></i>
+              Conheça o COMDEMA
+            </a>
+            <a href="#denuncia" class="btn btn--outline">
+              <i data-lucide="alert-triangle" aria-hidden="true"></i>
+              Fazer Denúncia
+            </a>
+          </div>
 
-      <nav class="footer__nav" aria-label="Acesso rápido">
-        <h4>Acesso Rápido</h4>
-        <ul role="list">
-          <li><a href="#sobre">Sobre o COMDEMA</a></li>
-          <li><a href="#educacao">Educação Ambiental</a></li>
-          <li><a href="#campanhas">Campanhas</a></li>
-          <li><a href="#noticias">Notícias</a></li>
-          <li><a href="#denuncia">Denúncias</a></li>
-        </ul>
-      </nav>
+          <!-- Stats -->
+          <div class="hero__stats animate-fade-up" style="animation-delay: 0.4s" aria-label="Números do COMDEMA">
+            <div class="stat-item">
+              <span class="stat-item__number" data-target="12">0</span>
+              <span class="stat-item__label">Conselheiros ativos</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-item__number" data-target="340">0</span>
+              <span class="stat-item__label">Denúncias atendidas</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-item__number" data-target="28">0</span>
+              <span class="stat-item__label">Campanhas realizadas</span>
+            </div>
+          </div>
+        </div>
 
-      <div class="footer__social">
-        <h4>Redes Sociais</h4>
-        <div class="social-links">
-          <a href="#" class="social-link" aria-label="Facebook do COMDEMA">
-            <i data-lucide="facebook" aria-hidden="true"></i>
+        <!-- Scroll indicator -->
+        <div class="hero__scroll" aria-hidden="true">
+          <span></span>
+        </div>
+      </section>
+
+      <!-- ========== SOBRE O COMDEMA ========== -->
+      <section class="sobre section" id="sobre" aria-labelledby="sobre-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Quem somos</span>
+            <h2 class="section-title" id="sobre-title">O que é o COMDEMA?</h2>
+            <p class="section-desc">
+              Órgão consultivo e deliberativo criado para fiscalizar, orientar e promover a política ambiental
+              municipal.
+            </p>
+          </div>
+
+          <div class="sobre__grid">
+            <!-- Texto principal -->
+            <div class="sobre__text animate-slide-left">
+              <p>
+                O <strong>COMDEMA</strong> (Conselho Municipal de Defesa do Meio Ambiente) é um órgão colegiado, de
+                caráter consultivo e deliberativo, vinculado ao poder executivo municipal. Foi criado com a missão de
+                garantir a participação popular nas decisões relacionadas à política ambiental do município.
+              </p>
+              <p>
+                O conselho é composto por representantes do poder público e da sociedade civil organizada, garantindo
+                transparência e democracia nas decisões que afetam o meio ambiente local.
+              </p>
+              <a href="#contato" class="btn btn--primary" style="margin-top: 1.5rem">
+                <i data-lucide="users" aria-hidden="true"></i>
+                Fale com um conselheiro
+              </a>
+            </div>
+
+            <!-- Cards de funções -->
+            <div class="sobre__cards">
+              <article class="func-card animate-fade-up" style="animation-delay: 0.1s">
+                <div class="func-card__icon" aria-hidden="true"><i data-lucide="gavel"></i></div>
+                <h3>Deliberar</h3>
+                <p>Aprova normas, pareceres e políticas ambientais municipais.</p>
+              </article>
+              <article class="func-card animate-fade-up" style="animation-delay: 0.2s">
+                <div class="func-card__icon" aria-hidden="true"><i data-lucide="eye"></i></div>
+                <h3>Fiscalizar</h3>
+                <p>Monitora o cumprimento da legislação ambiental no município.</p>
+              </article>
+              <article class="func-card animate-fade-up" style="animation-delay: 0.3s">
+                <div class="func-card__icon" aria-hidden="true"><i data-lucide="graduation-cap"></i></div>
+                <h3>Educar</h3>
+                <p>Promove ações de conscientização e educação ambiental.</p>
+              </article>
+              <article class="func-card animate-fade-up" style="animation-delay: 0.4s">
+                <div class="func-card__icon" aria-hidden="true"><i data-lucide="users-2"></i></div>
+                <h3>Participar</h3>
+                <p>Garante a participação popular nas decisões ambientais.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== EDUCAÇÃO AMBIENTAL ========== -->
+      <section class="educacao section section--alt" id="educacao" aria-labelledby="educacao-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Educação</span>
+            <h2 class="section-title" id="educacao-title">Educação Ambiental</h2>
+            <p class="section-desc">
+              Informação é o primeiro passo para um ambiente mais saudável. Conheça práticas sustentáveis.
+            </p>
+          </div>
+
+          <div class="edu__tabs" role="tablist" aria-label="Categorias de educação ambiental">
+            <button
+              class="edu-tab active"
+              role="tab"
+              aria-selected="true"
+              data-tab="residuos"
+              aria-controls="tab-residuos"
+            >
+              <i data-lucide="trash-2" aria-hidden="true"></i> Resíduos
+            </button>
+            <button
+              class="edu-tab"
+              role="tab"
+              aria-selected="false"
+              data-tab="reciclagem"
+              aria-controls="tab-reciclagem"
+            >
+              <i data-lucide="recycle" aria-hidden="true"></i> Reciclagem
+            </button>
+            <button
+              class="edu-tab"
+              role="tab"
+              aria-selected="false"
+              data-tab="preservacao"
+              aria-controls="tab-preservacao"
+            >
+              <i data-lucide="trees" aria-hidden="true"></i> Preservação
+            </button>
+            <button class="edu-tab" role="tab" aria-selected="false" data-tab="urbano" aria-controls="tab-urbano">
+              <i data-lucide="building-2" aria-hidden="true"></i> Conscientização Urbana
+            </button>
+          </div>
+
+          <!-- Tab: Resíduos -->
+          <div class="edu-panel active" id="tab-residuos" role="tabpanel">
+            <div class="edu-panel__grid">
+              <div class="edu-panel__info">
+                <h3>Descarte Correto de Resíduos</h3>
+                <p>
+                  O descarte inadequado de resíduos sólidos é uma das principais causas de poluição ambiental. Separar o
+                  lixo corretamente protege solos, rios e a saúde pública.
+                </p>
+                <ul class="edu-list">
+                  <li><i data-lucide="check-circle" aria-hidden="true"></i> Separe recicláveis de orgânicos</li>
+                  <li>
+                    <i data-lucide="check-circle" aria-hidden="true"></i> Nunca jogue lixo em terrenos baldios ou rios
+                  </li>
+                  <li>
+                    <i data-lucide="check-circle" aria-hidden="true"></i> Descarte pilhas e eletrônicos em pontos
+                    específicos
+                  </li>
+                  <li><i data-lucide="check-circle" aria-hidden="true"></i> Leve entulho a ecopontos municipais</li>
+                  <li><i data-lucide="check-circle" aria-hidden="true"></i> Reduza o uso de embalagens descartáveis</li>
+                </ul>
+              </div>
+              <div class="edu-panel__visual">
+                <div class="lixeira-guide" aria-label="Guia de cores das lixeiras">
+                  <div class="lixeira" style="--lixeira-color: #2563eb">
+                    <i data-lucide="droplets" aria-hidden="true"></i>
+                    <span>Azul</span>
+                    <small>Papel e papelão</small>
+                  </div>
+                  <div class="lixeira" style="--lixeira-color: #dc2626">
+                    <i data-lucide="package" aria-hidden="true"></i>
+                    <span>Vermelho</span>
+                    <small>Plástico</small>
+                  </div>
+                  <div class="lixeira" style="--lixeira-color: #16a34a">
+                    <i data-lucide="wine" aria-hidden="true"></i>
+                    <span>Verde</span>
+                    <small>Vidro</small>
+                  </div>
+                  <div class="lixeira" style="--lixeira-color: #ca8a04">
+                    <i data-lucide="cpu" aria-hidden="true"></i>
+                    <span>Amarelo</span>
+                    <small>Metal</small>
+                  </div>
+                  <div class="lixeira" style="--lixeira-color: #78716c">
+                    <i data-lucide="leaf" aria-hidden="true"></i>
+                    <span>Marrom</span>
+                    <small>Orgânicos</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab: Reciclagem -->
+          <div class="edu-panel" id="tab-reciclagem" role="tabpanel" hidden>
+            <div class="edu-panel__grid">
+              <div class="edu-panel__info">
+                <h3>Reciclagem: Feche o Ciclo</h3>
+                <p>
+                  A reciclagem transforma resíduos em novos produtos, economizando energia e recursos naturais. Uma
+                  atitude simples com impacto enorme no planeta.
+                </p>
+                <ul class="edu-list">
+                  <li><i data-lucide="check-circle" aria-hidden="true"></i> Limpe as embalagens antes de reciclar</li>
+                  <li>
+                    <i data-lucide="check-circle" aria-hidden="true"></i> Amasse latas e garrafas PET para economizar
+                    espaço
+                  </li>
+                  <li><i data-lucide="check-circle" aria-hidden="true"></i> Use sacolas retornáveis nas compras</li>
+                  <li>
+                    <i data-lucide="check-circle" aria-hidden="true"></i> Procure cooperativas de reciclagem locais
+                  </li>
+                  <li>
+                    <i data-lucide="check-circle" aria-hidden="true"></i> Doe roupas e eletrônicos em vez de jogar fora
+                  </li>
+                </ul>
+              </div>
+              <div class="edu-panel__visual">
+                <div class="recycle-facts">
+                  <div class="recycle-fact">
+                    <span class="recycle-fact__num">1 tonelada</span>
+                    <span>de papel reciclado salva 15 árvores</span>
+                  </div>
+                  <div class="recycle-fact">
+                    <span class="recycle-fact__num">95%</span>
+                    <span>menos energia para produzir alumínio reciclado</span>
+                  </div>
+                  <div class="recycle-fact">
+                    <span class="recycle-fact__num">450 anos</span>
+                    <span>é o tempo que o plástico leva para se decompor</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab: Preservação -->
+          <div class="edu-panel" id="tab-preservacao" role="tabpanel" hidden>
+            <div class="edu-panel__grid">
+              <div class="edu-panel__info">
+                <h3>Preservação Ambiental</h3>
+                <p>
+                  Preservar áreas verdes, nascentes e matas ciliares é fundamental para garantir água, ar limpo e
+                  qualidade de vida às gerações futuras.
+                </p>
+                <ul class="edu-list">
+                  <li>
+                    <i data-lucide="check-circle" aria-hidden="true"></i> Não desmatar áreas de proteção permanente
+                  </li>
+                  <li>
+                    <i data-lucide="check-circle" aria-hidden="true"></i> Proteja nascentes e córregos do seu bairro
+                  </li>
+                  <li>
+                    <i data-lucide="check-circle" aria-hidden="true"></i> Plante árvores nativas em sua propriedade
+                  </li>
+                  <li>
+                    <i data-lucide="check-circle" aria-hidden="true"></i> Denuncie queimadas e desmatamentos ilegais
+                  </li>
+                  <li>
+                    <i data-lucide="check-circle" aria-hidden="true"></i> Participe de mutirões de reflorestamento
+                  </li>
+                </ul>
+              </div>
+              <div class="edu-panel__visual">
+                <div class="preservation-visual" aria-hidden="true">
+                  <div class="preserve-circle preserve-circle--1"><i data-lucide="droplets"></i><span>Água</span></div>
+                  <div class="preserve-circle preserve-circle--2"><i data-lucide="wind"></i><span>Ar</span></div>
+                  <div class="preserve-circle preserve-circle--3"><i data-lucide="trees"></i><span>Solo</span></div>
+                  <div class="preserve-circle preserve-circle--4"><i data-lucide="bird"></i><span>Fauna</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab: Conscientização Urbana -->
+          <div class="edu-panel" id="tab-urbano" role="tabpanel" hidden>
+            <div class="edu-panel__grid">
+              <div class="edu-panel__info">
+                <h3>Conscientização Urbana</h3>
+                <p>
+                  A cidade também é natureza. Pequenos hábitos urbanos sustentáveis fazem grande diferença no meio
+                  ambiente e na qualidade de vida coletiva.
+                </p>
+                <ul class="edu-list">
+                  <li>
+                    <i data-lucide="check-circle" aria-hidden="true"></i> Prefira transporte coletivo ou bicicleta
+                  </li>
+                  <li><i data-lucide="check-circle" aria-hidden="true"></i> Economize água ao lavar calçadas</li>
+                  <li><i data-lucide="check-circle" aria-hidden="true"></i> Não jogue lixo em bueiros ou sarjetas</li>
+                  <li>
+                    <i data-lucide="check-circle" aria-hidden="true"></i> Use lâmpadas LED e reduza o consumo elétrico
+                  </li>
+                  <li><i data-lucide="check-circle" aria-hidden="true"></i> Cuide das árvores da sua calçada</li>
+                </ul>
+              </div>
+              <div class="edu-panel__visual">
+                <div class="urban-tips" aria-hidden="true">
+                  <div class="urban-tip"><i data-lucide="bike"></i><span>Mobilidade sustentável</span></div>
+                  <div class="urban-tip"><i data-lucide="zap"></i><span>Economia de energia</span></div>
+                  <div class="urban-tip"><i data-lucide="droplets"></i><span>Uso consciente da água</span></div>
+                  <div class="urban-tip"><i data-lucide="leaf"></i><span>Arborização urbana</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== CAMPANHAS ========== -->
+      <section class="campanhas section" id="campanhas" aria-labelledby="campanhas-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Divulgação</span>
+            <h2 class="section-title" id="campanhas-title">Campanhas Ambientais</h2>
+            <p class="section-desc">
+              Iniciativas do COMDEMA para engajar e mobilizar a população em prol do meio ambiente.
+            </p>
+          </div>
+
+          <div class="campanhas__grid">
+            <article class="campanha-card campanha-card--destaque animate-fade-up">
+              <div class="campanha-card__badge">Em andamento</div>
+              <div class="campanha-card__icon" aria-hidden="true"><i data-lucide="droplets"></i></div>
+              <h3>Março Azul – Água é Vida</h3>
+              <p>
+                Campanha de conscientização sobre o uso racional da água. Participe e ajude a proteger esse recurso
+                essencial.
+              </p>
+              <a href="#contato" class="btn btn--sm btn--primary">Saiba mais</a>
+            </article>
+
+            <article class="campanha-card animate-fade-up" style="animation-delay: 0.1s">
+              <div class="campanha-card__badge campanha-card__badge--green">Recorrente</div>
+              <div class="campanha-card__icon" aria-hidden="true"><i data-lucide="recycle"></i></div>
+              <h3>Cidade Limpa</h3>
+              <p>Mutirões mensais de limpeza em praças, parques e margens de córregos. Venha participar!</p>
+              <a href="#contato" class="btn btn--sm btn--outline">Participar</a>
+            </article>
+
+            <article class="campanha-card animate-fade-up" style="animation-delay: 0.2s">
+              <div class="campanha-card__badge campanha-card__badge--amber">Próxima</div>
+              <div class="campanha-card__icon" aria-hidden="true"><i data-lucide="tree-pine"></i></div>
+              <h3>Plantar é Cuidar</h3>
+              <p>Distribuição gratuita de mudas nativas e oficinas de jardinagem sustentável para moradores.</p>
+              <a href="#contato" class="btn btn--sm btn--outline">Inscrever-se</a>
+            </article>
+
+            <article class="campanha-card animate-fade-up" style="animation-delay: 0.3s">
+              <div class="campanha-card__badge campanha-card__badge--blue">Educacional</div>
+              <div class="campanha-card__icon" aria-hidden="true"><i data-lucide="school"></i></div>
+              <h3>COMDEMA nas Escolas</h3>
+              <p>
+                Programa de visitas educativas às escolas municipais com oficinas de reciclagem e preservação ambiental.
+              </p>
+              <a href="#contato" class="btn btn--sm btn--outline">Agendar</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== DICAS AMBIENTAIS ========== -->
+      <section class="dicas section section--alt" aria-labelledby="dicas-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Dicas</span>
+            <h2 class="section-title" id="dicas-title">Dicas para o Dia a Dia</h2>
+          </div>
+          <div class="dicas__grid" role="list">
+            <div class="dica-card" role="listitem">
+              <div class="dica-card__icon" aria-hidden="true"><i data-lucide="shower-head"></i></div>
+              <p>Reduza o banho para <strong>5 minutos</strong> e economize até 80 litros de água.</p>
+            </div>
+            <div class="dica-card" role="listitem">
+              <div class="dica-card__icon" aria-hidden="true"><i data-lucide="shopping-bag"></i></div>
+              <p>Leve sua <strong>sacola retornável</strong> sempre que sair para compras.</p>
+            </div>
+            <div class="dica-card" role="listitem">
+              <div class="dica-card__icon" aria-hidden="true"><i data-lucide="plug-zap"></i></div>
+              <p>Desligue aparelhos da <strong>tomada</strong> quando não estiver usando.</p>
+            </div>
+            <div class="dica-card" role="listitem">
+              <div class="dica-card__icon" aria-hidden="true"><i data-lucide="car"></i></div>
+              <p>Prefira <strong>caronas solidárias</strong> e transporte público sempre que possível.</p>
+            </div>
+            <div class="dica-card" role="listitem">
+              <div class="dica-card__icon" aria-hidden="true"><i data-lucide="flame"></i></div>
+              <p>Nunca faça <strong>queimadas</strong>. Denuncie ao COMDEMA imediatamente.</p>
+            </div>
+            <div class="dica-card" role="listitem">
+              <div class="dica-card__icon" aria-hidden="true"><i data-lucide="flower-2"></i></div>
+              <p>Monte uma <strong>composteira</strong> doméstica com restos de frutas e legumes.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== NOTÍCIAS ========== -->
+      <section class="noticias section" id="noticias" aria-labelledby="noticias-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Comunicados</span>
+            <h2 class="section-title" id="noticias-title">Notícias e Comunicados</h2>
+            <p class="section-desc">Fique por dentro das últimas ações e decisões do COMDEMA.</p>
+          </div>
+
+          <div class="noticias__grid">
+            <article class="noticia-card noticia-card--featured animate-fade-up card-ativo">
+              <div class="noticia-card__meta">
+                <span class="noticia-tag">Reunião Plenária</span>
+                <time datetime="2025-05-15">15 de maio de 2025</time>
+              </div>
+              <h3>Reunião ordinária de maio – Pauta sobre licenciamento ambiental</h3>
+              <p>
+                O COMDEMA realizará reunião ordinária para deliberar sobre novos pedidos de licenciamento ambiental no
+                município. Participação pública é bem-vinda.
+              </p>
+              <a href="#" class="noticia-card__link"> Ler mais <i data-lucide="arrow-right" aria-hidden="true"></i> </a>
+            </article>
+
+            <article class="noticia-card animate-fade-up" style="animation-delay: 0.1s">
+              <div class="noticia-card__meta">
+                <span class="noticia-tag noticia-tag--green">Campanha</span>
+                <time datetime="2025-05-08">08 de maio de 2025</time>
+              </div>
+              <h3>Mutirão de limpeza do Parque Municipal mobiliza 200 voluntários</h3>
+              <p>Ação coletiva retirou mais de 3 toneladas de resíduos do parque municipal.</p>
+              <a href="#" class="noticia-card__link"> Ler mais <i data-lucide="arrow-right" aria-hidden="true"></i> </a>
+            </article>
+
+            <article class="noticia-card animate-fade-up" style="animation-delay: 0.2s">
+              <div class="noticia-card__meta">
+                <span class="noticia-tag noticia-tag--blue">Educação</span>
+                <time datetime="2025-04-28">28 de abril de 2025</time>
+              </div>
+              <h3>COMDEMA leva educação ambiental a 12 escolas municipais</h3>
+              <p>Mais de 1.500 alunos participaram de oficinas sobre reciclagem e preservação das nascentes.</p>
+              <a href="#" class="noticia-card__link"> Ler mais <i data-lucide="arrow-right" aria-hidden="true"></i> </a>
+            </article>
+
+            <article class="noticia-card animate-fade-up" style="animation-delay: 0.3s">
+              <div class="noticia-card__meta">
+                <span class="noticia-tag noticia-tag--amber">Resolução</span>
+                <time datetime="2025-04-10">10 de abril de 2025</time>
+              </div>
+              <h3>Aprovada resolução sobre descarte de resíduos de construção civil</h3>
+              <p>Nova norma estabelece procedimentos obrigatórios para geradores de entulho no município.</p>
+              <a href="#" class="noticia-card__link"> Ler mais <i data-lucide="arrow-right" aria-hidden="true"></i> </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== DENÚNCIAS ========== -->
+      <section class="denuncia section" id="denuncia" aria-labelledby="denuncia-title">
+        <div class="container">
+          <div class="denuncia__inner">
+            <div class="denuncia__content animate-slide-left">
+              <span class="section-tag section-tag--white">Canal Oficial</span>
+              <h2 class="section-title section-title--white" id="denuncia-title">Como Fazer uma Denúncia Ambiental</h2>
+              <p style="color: rgba(255, 255, 255, 0.85); margin-bottom: 2rem">
+                Você identificou um crime ou irregularidade ambiental? Conte para nós. Sua denúncia é fundamental para
+                proteger o meio ambiente do nosso município.
+              </p>
+
+              <div class="denuncia__steps">
+                <div class="denuncia-step">
+                  <div class="denuncia-step__num" aria-hidden="true">1</div>
+                  <div>
+                    <h4>Documente</h4>
+                    <p>Tire fotos ou vídeos da irregularidade, se possível e seguro.</p>
+                  </div>
+                </div>
+                <div class="denuncia-step">
+                  <div class="denuncia-step__num" aria-hidden="true">2</div>
+                  <div>
+                    <h4>Registre o endereço</h4>
+                    <p>Anote o endereço ou ponto de referência do local.</p>
+                  </div>
+                </div>
+                <div class="denuncia-step">
+                  <div class="denuncia-step__num" aria-hidden="true">3</div>
+                  <div>
+                    <h4>Entre em contato</h4>
+                    <p>Use nosso WhatsApp, e-mail ou compareça presencialmente.</p>
+                  </div>
+                </div>
+                <div class="denuncia-step">
+                  <div class="denuncia-step__num" aria-hidden="true">4</div>
+                  <div>
+                    <h4>Acompanhe</h4>
+                    <p>Solicite um número de protocolo para acompanhar o andamento.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="denuncia__actions">
+                <a
+                  href="https://wa.me/5519900000000?text=Ol%C3%A1%2C+gostaria+de+registrar+uma+den%C3%BAncia+ambiental."
+                  class="btn btn--white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i data-lucide="message-circle" aria-hidden="true"></i>
+                  Denunciar pelo WhatsApp
+                </a>
+                <a href="mailto:comdema@municipio.sp.gov.br" class="btn btn--outline-white">
+                  <i data-lucide="mail" aria-hidden="true"></i>
+                  Denunciar por e-mail
+                </a>
+              </div>
+            </div>
+
+            <!-- Chatbot simulado -->
+            <div class="chatbot animate-slide-right" aria-label="Simulação do chatbot do COMDEMA">
+              <div class="chatbot__header">
+                <div class="chatbot__avatar" aria-hidden="true">
+                  <i data-lucide="leaf"></i>
+                </div>
+                <div>
+                  <strong>COMDEMA Bot</strong>
+                  <span class="chatbot__status">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    Online agora
+                  </span>
+                </div>
+              </div>
+
+              <div
+                class="chatbot__messages"
+                id="chatMessages"
+                role="log"
+                aria-live="polite"
+                aria-label="Mensagens do chatbot"
+              >
+                <div class="chat-msg chat-msg--bot">
+                  <p>👋 Olá! Sou o assistente virtual do <strong>COMDEMA</strong>. Como posso ajudar você hoje?</p>
+                </div>
+                <div class="chat-msg chat-msg--bot">
+                  <p>Escolha uma das opções abaixo:</p>
+                </div>
+              </div>
+
+              <div class="chatbot__options" role="menu">
+                <button class="chat-opt" role="menuitem" data-response="denuncia">
+                  <i data-lucide="alert-triangle" aria-hidden="true"></i> Fazer uma denúncia ambiental
+                </button>
+                <button class="chat-opt" role="menuitem" data-response="descarte">
+                  <i data-lucide="trash-2" aria-hidden="true"></i> Informações sobre descarte correto
+                </button>
+                <button class="chat-opt" role="menuitem" data-response="horarios">
+                  <i data-lucide="clock" aria-hidden="true"></i> Horários e contatos
+                </button>
+                <button class="chat-opt" role="menuitem" data-response="educacao">
+                  <i data-lucide="book-open" aria-hidden="true"></i> Educação ambiental
+                </button>
+                <button class="chat-opt" role="menuitem" data-response="tutoriais">
+                  <i data-lucide="play-circle" aria-hidden="true"></i> Tutoriais e orientações
+                </button>
+              </div>
+
+              <div class="chatbot__input">
+                <input
+                  type="text"
+                  id="chatInput"
+                  placeholder="Digite sua mensagem..."
+                  aria-label="Digite sua mensagem para o chatbot"
+                />
+                <button id="chatSend" aria-label="Enviar mensagem">
+                  <i data-lucide="send" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== CONTATO ========== -->
+      <section class="contato section" id="contato" aria-labelledby="contato-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Fale Conosco</span>
+            <h2 class="section-title" id="contato-title">Entre em Contato</h2>
+            <p class="section-desc">
+              Estamos aqui para ouvir, orientar e agir. Seus direitos ambientais são nossa prioridade.
+            </p>
+          </div>
+          <div class="contato__grid">
+            <div class="contato-card animate-fade-up">
+              <div class="contato-card__icon" aria-hidden="true"><i data-lucide="map-pin"></i></div>
+              <h3>Endereço</h3>
+              <p>Rua Exemplo, 123 – Centro<br />Município – SP, CEP 00000-000</p>
+            </div>
+            <div class="contato-card animate-fade-up" style="animation-delay: 0.1s">
+              <div class="contato-card__icon" aria-hidden="true"><i data-lucide="clock"></i></div>
+              <h3>Horário de Atendimento</h3>
+              <p>Segunda a Sexta<br />08h00 às 17h00</p>
+            </div>
+            <div class="contato-card animate-fade-up" style="animation-delay: 0.2s">
+              <div class="contato-card__icon" aria-hidden="true"><i data-lucide="phone"></i></div>
+              <h3>Telefone</h3>
+              <p>(19) 3900-0000<br />(19) 99000-0000</p>
+            </div>
+            <div class="contato-card animate-fade-up" style="animation-delay: 0.3s">
+              <div class="contato-card__icon" aria-hidden="true"><i data-lucide="mail"></i></div>
+              <h3>E-mail</h3>
+              <p>comdema@municipio.sp.gov.br</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" role="contentinfo">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <a href="#" class="footer__logo" aria-label="COMDEMA – início">
+            <div class="logo-icon logo-icon--sm" aria-hidden="true">
+              <img src="../img/mini_0670-comdema.jpg" alt="" />
+            </div>
+            <div>
+              <span class="logo-text__primary">COMDEMA</span>
+              <span class="logo-text__secondary">Conselho Municipal de Defesa<br />do Meio Ambiente</span>
+            </div>
           </a>
-          <a href="#" class="social-link" aria-label="Instagram do COMDEMA">
-            <i data-lucide="instagram" aria-hidden="true"></i>
-          </a>
-          <a href="#" class="social-link" aria-label="YouTube do COMDEMA">
-            <i data-lucide="youtube" aria-hidden="true"></i>
-          </a>
-          <a href="https://wa.me/5519900000000?text=Ol%C3%A1%2C+gostaria+de+obter+informa%C3%A7%C3%B5es+sobre+o+COMDEMA." class="social-link" aria-label="WhatsApp do COMDEMA" target="_blank" rel="noopener noreferrer">
-            <i data-lucide="message-circle" aria-hidden="true"></i>
-          </a>
+          <p class="footer__tagline">Preservando o presente para garantir o futuro.</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Links úteis">
+          <h4>Links Úteis</h4>
+          <ul role="list">
+            <li><a href="#">Prefeitura Municipal</a></li>
+            <li><a href="#">CETESB – Agência Ambiental SP</a></li>
+            <li><a href="#">IBAMA</a></li>
+            <li><a href="#">Secretaria de Meio Ambiente SP</a></li>
+            <li><a href="#">SISNAMA</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__nav" aria-label="Acesso rápido">
+          <h4>Acesso Rápido</h4>
+          <ul role="list">
+            <li><a href="#sobre">Sobre o COMDEMA</a></li>
+            <li><a href="#educacao">Educação Ambiental</a></li>
+            <li><a href="#campanhas">Campanhas</a></li>
+            <li><a href="#noticias">Notícias</a></li>
+            <li><a href="#denuncia">Denúncias</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__social">
+          <h4>Redes Sociais</h4>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook do COMDEMA">
+              <i data-lucide="facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram do COMDEMA">
+              <i data-lucide="instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube do COMDEMA">
+              <i data-lucide="youtube" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://wa.me/5519900000000?text=Ol%C3%A1%2C+gostaria+de+obter+informa%C3%A7%C3%B5es+sobre+o+COMDEMA."
+              class="social-link"
+              aria-label="WhatsApp do COMDEMA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i data-lucide="message-circle" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="footer__bottom">
-      <div class="container footer__bottom-inner">
-        <p>&copy; <span id="footer-year"></span> COMDEMA – Conselho Municipal de Defesa do Meio Ambiente. Todos os direitos reservados.</p>
-        <p>Portal desenvolvido com <span aria-label="amor">♥</span> pela Prefeitura Municipal.</p>
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <p>
+            &copy; <span id="footer-year"></span> COMDEMA – Conselho Municipal de Defesa do Meio Ambiente. Todos os
+            direitos reservados.
+          </p>
+          <p>Portal desenvolvido com <span aria-label="amor">♥</span> pela Prefeitura Municipal.</p>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- ========== BOTÃO FLUTUANTE WHATSAPP ========== -->
-  <a
-    href="https://wa.me/5519900000000?text=Ol%C3%A1%2C+gostaria+de+obter+informa%C3%A7%C3%B5es+sobre+o+COMDEMA."
-    class="whatsapp-float"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Fale conosco pelo WhatsApp"
-    title="Fale conosco pelo WhatsApp"
-  >
-    <svg class="whatsapp-float__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-    </svg>
-    <span class="whatsapp-float__label">Fale Conosco</span>
-  </a>
+    <!-- ========== BOTÃO FLUTUANTE WHATSAPP ========== -->
+    <a
+      href="https://wa.me/5519900000000?text=Ol%C3%A1%2C+gostaria+de+obter+informa%C3%A7%C3%B5es+sobre+o+COMDEMA."
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Fale conosco pelo WhatsApp"
+      title="Fale conosco pelo WhatsApp"
+    >
+      <svg class="whatsapp-float__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+        />
+      </svg>
+      <span class="whatsapp-float__label">Fale Conosco</span>
+    </a>
 
-  <!-- ========== OVERLAY MENU MOBILE ========== -->
-  <div class="menu-overlay" id="menu-overlay" aria-hidden="true"></div>
+    <!-- ========== OVERLAY MENU MOBILE ========== -->
+    <div class="menu-overlay" id="menu-overlay" aria-hidden="true"></div>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
